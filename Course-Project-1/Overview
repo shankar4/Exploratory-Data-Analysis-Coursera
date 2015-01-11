@@ -1,7 +1,18 @@
 This has four subfolders one each for the four plots required.
 plot1 was done differently as I was still learning how to remove factors from read in data
-The data has columns with string entries which are automatically declared as factor levels.
+The data to be read in has columns with string entries which are automatically declared as factor levels when read in. 
 This had to be removed so they could be viewed as characters and eventually turned into numerics for plot1.
-plot2 turns off that option upfront before reading in data.
-This was useful in also dealing with dates in the lubridate package
+This 'unfactoring' was done after reading in, in plot 1. 
+Then I found that this can be turned off with a simple declaration before reading-in. 
+I used this method in plots 2 to 4 to turn off the factoring option before the data is read in.  
+This was also useful in dealing with dates in the lubridate package, but for one place:
+This was with regard to identifying the name of the day(s), to label the plots.
+That required removing the factor information; but the plots given to us did not use
+R/lubridate standards for day representatins (this discreoancy exists only for Thursday - it is 'Thurs', but
+the label given used 'Thu'). So, this was not an issue, so far as this assignment was
+concerned. However, I verified that I can get plots with automatically generated labels, instead of
+hardcoding that I ended up doing, to match the given plot labels. 
+
+There probably is a better way to deal with the removal of factoring levels. Hope to find it when I review
+my peers' submissions. 
 
