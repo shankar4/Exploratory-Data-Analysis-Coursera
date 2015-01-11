@@ -41,7 +41,7 @@ tot.time <- as.period(time)+ as.period(rdate)
 gl.act.pwr <- as.numeric(epct$Global_active_power)
 #convert tot.time to minutes
 tot.time.min <- 60*24*day(tot.time)+ 60*hour(tot.time)+ minute(tot.time)
-plot (tot.time.min, gl.act.pwr)
+# plot (tot.time.min, gl.act.pwr)
 # plot first with axes and annotation set at FALSE
 
 plot (tot.time.min, gl.act.pwr, ylab= "Global Active Power (Kilowatts)", xlab="", axes=FALSE, ann=FALSE, type="l")
