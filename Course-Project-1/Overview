@@ -1,1 +1,7 @@
-This
+This has four subfolders one each for the four plots required.
+plot1 was done differently as I was still learning how to remove factors from read in data
+The data has columns with string entries which are automatically declared as factor levels.
+This had to be removed so they could be viewed as characters and eventually turned into numerics for plot1.
+plot2 turns off that option upfront before reading in data.
+This was useful in also dealing with dates in the lubridate package
+
